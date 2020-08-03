@@ -1,6 +1,6 @@
 {
   "name": "@indielayer/eslint-config-vue",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Indielayer eslint config with vue",
   "homepage": "https://github.com/indielayer/eslint-config/tree/master/packages/eslint-config-vue",
   "keywords": [
@@ -22,7 +22,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@indielayer/eslint-config": "^0.0.0",
+    "@indielayer/eslint-config": "^1.0.0",
     "babel-eslint": "^10.0.3",
     "eslint-plugin-vue": "^6.2.2"
   },

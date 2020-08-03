@@ -1,6 +1,6 @@
 {
   "name": "@indielayer/eslint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Indielayer eslint config",
   "homepage": "https://github.com/indielayer/eslint-config/tree/master/packages/eslint-config",
   "keywords": [
