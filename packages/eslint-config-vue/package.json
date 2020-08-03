@@ -1,0 +1,32 @@
+{
+  "name": "@indielayer/eslint-config-vue",
+  "version": "0.0.0",
+  "description": "Indielayer eslint config with vue",
+  "homepage": "https://github.com/indielayer/eslint-config/tree/master/packages/eslint-config-vue",
+  "keywords": [
+    "indielayer",
+    "eslint",
+    "vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indielayer/eslint-config.git",
+    "directory": "packages/eslint-config-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/indielayer/eslint-config/issues"
+  },
+  "license": "MIT",
+  "author": "João Teixeira <joao@indielayer.com>",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@indielayer/eslint-config": "^0.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint-plugin-vue": "^6.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

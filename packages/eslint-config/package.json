@@ -1,0 +1,34 @@
+{
+  "name": "@indielayer/eslint-config",
+  "version": "0.0.0",
+  "description": "Indielayer eslint config",
+  "homepage": "https://github.com/indielayer/eslint-config/tree/master/packages/eslint-config",
+  "keywords": [
+    "indielayer",
+    "eslint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indielayer/eslint-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/indielayer/eslint-config/issues"
+  },
+  "license": "MIT",
+  "author": "João Teixeira <joao@indielayer.com>",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "typescript": "^3.8.2"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
