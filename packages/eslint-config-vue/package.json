@@ -1,12 +1,14 @@
 {
   "name": "@indielayer/eslint-config-vue",
   "version": "1.0.0",
-  "description": "Indielayer eslint config with vue",
-  "homepage": "https://github.com/indielayer/eslint-config/tree/master/packages/eslint-config-vue",
+  "description": "Indielayer eslint config for vue",
+  "homepage": "https://indielayer.com/",
   "keywords": [
     "indielayer",
     "eslint",
-    "vue"
+    "vue",
+    "styleguide",
+    "eslintconfig"
   ],
   "repository": {
     "type": "git",
@@ -21,12 +23,22 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {
-    "@indielayer/eslint-config": "^1.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint-plugin-vue": "^6.2.2"
-  },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@indielayer/eslint-config": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-plugin-vue": "^7.7.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-plugin-vue": "^7.7.0"
   }
 }

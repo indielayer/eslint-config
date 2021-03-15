@@ -1,13 +1,14 @@
 module.exports = {
   extends: [
+    'plugin:vue/vue3-essential',
+    '@vue/typescript/recommended',
     '@indielayer',
-    'plugin:vue/recommended'
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   plugins: [
-    'vue'
+    'vue',
   ],
   rules: {
     // 0 - 'off'
@@ -18,13 +19,19 @@ module.exports = {
     'vue/multiline-html-element-content-newline': 0,
     'vue/singleline-html-element-content-newline': 0,
     'vue/html-closing-bracket-spacing': 0,
-    'vue/html-self-closing': 0,
+    'vue/html-self-closing': [2, {
+      'html': {
+        'void': 'always',
+        'normal': 'never',
+        'component': 'always',
+      },
+    }],
     'vue/max-attributes-per-line': [2, {
       'singleline': 4,
       'multiline': {
         'max': 1,
-        'allowFirstLine': false
-      }
-    }]
-  }
+        'allowFirstLine': false,
+      },
+    }],
+  },
 }

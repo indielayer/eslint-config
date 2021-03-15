@@ -1,14 +1,14 @@
 module.exports = {
   env: {
     node: true,
-    browser: true
+    browser: true,
   },
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
   ],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
   ],
   rules: {
     // 0 - 'off'
@@ -17,15 +17,17 @@ module.exports = {
     'quotes': [2, 'single'],
     'indent': [2, 2],
     'semi': [2, 'never'],
+    'no-tabs': 2,
     'object-curly-spacing': [2, 'always'],
     'computed-property-spacing': [2, 'never'],
-    'comma-dangle': [2, 'never'],
+    'comma-dangle': [2, 'always-multiline'],
     'array-bracket-newline': 0,
     'array-bracket-spacing': [2, 'never'],
     'no-multiple-empty-lines': [2, { 'max': 1, 'maxEOF': 0, 'maxBOF': 0 }],
     'keyword-spacing': [2, { 'before': true, 'after': true }],
     'space-infix-ops': 2,
     'space-before-blocks': 2,
+    'space-before-function-paren': [2, { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' }],
     'no-console': 0,
     'no-regex-spaces': 0,
     'no-debugger': 0,
@@ -35,15 +37,15 @@ module.exports = {
     'prefer-destructuring': [2, {
       AssignmentExpression: {
         array: false,
-        object: false
+        object: false,
       },
       VariableDeclarator: {
         array: true,
-        object: true
-      }
+        object: true,
+      },
     }, {
-      enforceForRenamedProperties: false
-    }
+      enforceForRenamedProperties: false,
+    },
     ],
     'arrow-parens': [2, 'always'],
     'arrow-spacing': 2,
@@ -52,7 +54,7 @@ module.exports = {
       2,
       { blankLine: 'always', next: 'return', prev: '*' },
       { blankLine: 'always', next: '*', prev: ['const', 'let'] },
-      { blankLine: 'any', next: ['const', 'let'], prev: ['const', 'let'] }
+      { blankLine: 'any', next: ['const', 'let'], prev: ['const', 'let'] },
     ],
     // Removed rule 'disallow the use of undeclared variables unless mentioned in /*global */ comments' from recommended eslint rules
     'no-undef': 0,
@@ -110,6 +112,8 @@ module.exports = {
     'no-path-concat': 1,
     // Prefer using arrow functions for callbacks
     'prefer-arrow-callback': 1,
+
+    // Typescript
     '@typescript-eslint/camelcase': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-member-accessibility': 0,
@@ -119,6 +123,6 @@ module.exports = {
     '@typescript-eslint/no-object-literal-type-assertion': 0,
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/no-use-before-define': 0,
-    '@typescript-eslint/no-var-requires': 0
-  }
+    '@typescript-eslint/no-var-requires': 0,
+  },
 }
