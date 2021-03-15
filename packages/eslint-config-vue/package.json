@@ -1,6 +1,6 @@
 {
   "name": "@indielayer/eslint-config-vue",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Indielayer eslint config for vue",
   "homepage": "https://indielayer.com/",
   "keywords": [
