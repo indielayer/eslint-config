@@ -30,14 +30,12 @@
     "@indielayer/eslint-config": "^2.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/eslint-parser": "^7.13.10",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
     "eslint-plugin-vue": "^7.7.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/eslint-parser": "^7.13.10",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
     "eslint-plugin-vue": "^7.7.0"
   }

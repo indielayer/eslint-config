@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'plugin:vue/vue3-essential',
     '@indielayer',
+    'plugin:vue/recommended',
   ],
   parserOptions: {
     parser: 'babel-eslint',
