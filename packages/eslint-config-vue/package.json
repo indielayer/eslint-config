@@ -1,6 +1,6 @@
 {
   "name": "@indielayer/eslint-config-vue",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Indielayer eslint config for vue",
   "homepage": "https://indielayer.com/",
   "keywords": [
@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@indielayer/eslint-config": "^1.0.0"
+    "@indielayer/eslint-config": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
