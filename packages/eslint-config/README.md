@@ -1,8 +1,8 @@
 <a href="https://indielayer.com/">
-  <img src="https://user-images.githubusercontent.com/3942799/90314498-25807a80-df0c-11ea-9e3a-b2b919bc9f10.png" alt="Indielayer" width="300" />
+  <img src="https://user-images.githubusercontent.com/3942799/147986660-cc494b39-559e-4534-be43-0438d0b11090.png" alt="Indielayer" width="300" />
 </a>
 
-> Building digital products and empowering online companies
+> < Tools for creators. />
 
 <br/>
 

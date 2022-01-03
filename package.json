@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://indielayer.com/",
   "workspaces": [
     "packages/*"
   ],
@@ -8,7 +9,7 @@
     "release": "lerna publish"
   },
   "dependencies": {
-    "eslint": "^7.22.0",
+    "eslint": "^8.6.0",
     "lerna": "^4.0.0"
   }
 }

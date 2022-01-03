@@ -1,8 +1,8 @@
 <a href="https://indielayer.com/">
-  <img src="https://user-images.githubusercontent.com/3942799/90314498-25807a80-df0c-11ea-9e3a-b2b919bc9f10.png" alt="Indielayer" width="300" />
+  <img src="https://user-images.githubusercontent.com/3942799/147986660-cc494b39-559e-4534-be43-0438d0b11090.png" alt="Indielayer" width="300" />
 </a>
 
-> Building digital products and empowering online companies
+> < Tools for creators. />
 
 <br/>
 
@@ -26,12 +26,12 @@ $ npm i -D @indielayer/eslint-config
 $ yarn add -D @indielayer/eslint-config
 ```
 
-2. Install `eslint` if not already present locally or globally
+2. Install `eslint` and `typescript` if not already present locally or globally
 
 ```bash
-$ npm i -D eslint
+$ npm i -D eslint typescript
 # or
-$ yarn add -D eslint
+$ yarn add -D eslint typescript
 ```
 
 3. Create a `.eslintrc` file
@@ -59,9 +59,9 @@ A full example `.eslintrc`:
 }
 ```
 
-## Vue
+## Vue 3
 
-If you're using Vue, follow [Getting Started](#getting-started) section by replacing `@indielayer/eslint-config` by `@indielayer/eslint-config-vue`.
+If you're using Vue 3, follow [Getting Started](#getting-started) section by replacing `@indielayer/eslint-config` by `@indielayer/eslint-config-vue`.
 
 And in your `.eslintrc` all you need is :
 

@@ -1,10 +1,13 @@
 module.exports = {
   extends: [
     '@indielayer',
-    'plugin:vue/recommended',
+    'plugin:vue/vue3-recommended',
   ],
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 2020,
+    sourceType: 'module',
   },
   plugins: [
     'vue',
@@ -29,7 +32,6 @@ module.exports = {
       'singleline': 4,
       'multiline': {
         'max': 1,
-        'allowFirstLine': false,
       },
     }],
   },

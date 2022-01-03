@@ -1,12 +1,15 @@
 {
   "name": "@indielayer/eslint-config-vue",
   "version": "2.1.2",
-  "description": "Indielayer eslint config for vue",
+  "description": "Indielayer ESLint Config for Vue 3",
   "homepage": "https://indielayer.com/",
   "keywords": [
     "indielayer",
     "eslint",
     "vue",
+    "vue3",
+    "nuxt",
+    "nuxt3",
     "styleguide",
     "eslintconfig"
   ],
@@ -27,16 +30,13 @@
     "access": "public"
   },
   "dependencies": {
-    "@indielayer/eslint-config": "^2.1.0"
+    "@indielayer/eslint-config": "^2.1.0",
+    "eslint-plugin-vue": "^8.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.22.0",
-    "eslint-plugin-vue": "^7.7.0"
+    "eslint": "^8.6.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.22.0",
-    "eslint-plugin-vue": "^7.7.0"
+    "eslint": "^8.6.0"
   }
 }
