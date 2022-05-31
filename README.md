@@ -18,25 +18,17 @@ ESlint config used on Indielayer
 
 Do you want to add the config to your own projects? There you go:
 
-1. Add this package to your devDependencies
+1. Add to your devDependencies
 
 ```bash
-$ npm i -D @indielayer/eslint-config
+$ npm i -D @indielayer/eslint-config eslint
 # or
-$ yarn add -D @indielayer/eslint-config
+$ yarn add -D @indielayer/eslint-config eslint
 ```
 
-2. Install `eslint` and `typescript` if not already present locally or globally
+2. Create a `.eslintrc` file
 
-```bash
-$ npm i -D eslint typescript
-# or
-$ yarn add -D eslint typescript
-```
-
-3. Create a `.eslintrc` file
-
-4. Extend our config (you can use just the scope name as ESLint will assume the `eslint-config` suffix):
+3. Extend our config (you can use just the scope name as ESLint will assume the `eslint-config` suffix):
 
 ```json
 {
