@@ -126,5 +126,8 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/type-annotation-spacing': [1, {
+      'before': false, 'after': true,
+    }],
   },
 }

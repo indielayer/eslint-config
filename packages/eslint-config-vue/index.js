@@ -18,6 +18,8 @@ module.exports = {
     // 2 - 'error'
     'vue/no-v-html': 0,
     'vue/valid-v-on': 0,
+    'vue/require-default-prop': 0,
+    'vue/multi-word-component-names': 0,
     'vue/multiline-html-element-content-newline': 0,
     'vue/singleline-html-element-content-newline': 0,
     'vue/html-closing-bracket-spacing': 0,
