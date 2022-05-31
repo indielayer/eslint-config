@@ -6,9 +6,10 @@
   ],
   "scripts": {
     "lint": "eslint . --config=packages/eslint-config/index.js",
-    "release": "pnpm -r publish --dry-run"
+    "release": "lerna publish"
   },
   "dependencies": {
-    "eslint": "^8.6.0"
+    "eslint": "^8.6.0",
+    "lerna": "^5.0.0"
   }
 }

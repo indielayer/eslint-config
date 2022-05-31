@@ -1,0 +1,16 @@
+{
+  "version": "independent",
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "allowBranch": [
+        "master"
+      ],
+      "message": "chore(release): publish"
+    }
+  }
+}
