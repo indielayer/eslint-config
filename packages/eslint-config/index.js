@@ -16,7 +16,7 @@ module.exports = {
     // 1 - 'warn'
     // 2 - 'error'
     'quotes': [2, 'single'],
-    'indent': [2, 2],
+    'indent': 0,
     'semi': [2, 'never'],
     'no-tabs': 2,
     'object-curly-spacing': [2, 'always'],
@@ -35,19 +35,7 @@ module.exports = {
     'no-unused-vars': 0,
     'no-mixed-spaces-and-tabs': 0,
     'prefer-const': 2,
-    'prefer-destructuring': [2, {
-      AssignmentExpression: {
-        array: false,
-        object: false,
-      },
-      VariableDeclarator: {
-        array: true,
-        object: true,
-      },
-    }, {
-      enforceForRenamedProperties: false,
-    },
-    ],
+    'prefer-destructuring': 0,
     'arrow-parens': [2, 'always'],
     'arrow-spacing': 2,
     'no-var': 2,
@@ -128,6 +116,9 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/type-annotation-spacing': [1, {
       'before': false, 'after': true,
+    }],
+    '@typescript-eslint/indent': [2, 2, {
+      'SwitchCase': 1,
     }],
   },
 }
