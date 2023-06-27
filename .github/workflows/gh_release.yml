@@ -4,7 +4,7 @@ run-name: Creating GH release - ${{ github.ref_name }}
 on:
   push:
     tags:
-      - "*"
+      - "**"
 
 jobs:
   check:
