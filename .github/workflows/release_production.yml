@@ -57,7 +57,7 @@ jobs:
           git config user.email 'bot+ci@indielayer.com'
 
       - name: Update install
-        run: pnpm install
+        run: pnpm install --frozen-lockfile=false
 
       - name: Publish packages
         run: pnpm run publish:prod
