@@ -48,6 +48,8 @@ jobs:
 
       - name: Changeset Version
         run: pnpm run version:prod
+        env:
+          GITHUB_TOKEN: ${{ secrets.P_GITHUB_TOKEN }}
 
       - name: Set git user
         run: |

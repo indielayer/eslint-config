@@ -38,6 +38,8 @@ jobs:
       - name: Changeset Version
         run: pnpm run version:snapshot
         if: steps.checkStatus.outcome == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.P_GITHUB_TOKEN }}
 
       - name: Publish canary
         id: publish
