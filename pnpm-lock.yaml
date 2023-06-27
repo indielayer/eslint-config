@@ -37,7 +37,7 @@ importers:
   packages/eslint-config-vue:
     dependencies:
       '@indielayer/eslint-config':
-        specifier: ^3.1.1
+        specifier: ^3.2.0
         version: link:../eslint-config
       eslint-plugin-vue:
         specifier: ^9.15.1
