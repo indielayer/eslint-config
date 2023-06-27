@@ -1,15 +1,21 @@
 {
   "private": true,
   "homepage": "https://indielayer.com/",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "lint": "eslint . --config=packages/eslint-config/index.js",
-    "release": "lerna publish"
+    "lint": "pnpm run stylelint && pnpm run eslint:base && pnpm run eslint:vue",
+    "stylelint": "cd packages/stylelint-config && pnpm run lint",
+    "eslint:base": "cd packages/eslint-config && pnpm run lint",
+    "eslint:vue": "cd packages/eslint-config-vue && pnpm run lint",
+    "changeset": "changeset",
+    "version:prod": "changeset version",
+    "publish:prod": "changeset publish",
+    "version:snapshot": "changeset version --snapshot dev",
+    "publish:snapshot": "changeset publish --no-git-tag --snapshot --tag dev",
+    "changeset:status": "node .scripts/changesetStatus.js"
   },
-  "dependencies": {
-    "eslint": "^8.6.0",
-    "lerna": "^5.0.0"
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
+    "eslint": "^8.43.0"
   }
 }

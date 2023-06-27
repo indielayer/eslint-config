@@ -16,14 +16,18 @@ module.exports = {
     // 1 - 'warn'
     // 2 - 'error'
     'quotes': [2, 'single'],
-    'indent': 0,
+    'indent': [2, 2, {
+      'SwitchCase': 1,
+    }],
     'semi': [2, 'never'],
     'no-tabs': 2,
     'object-curly-spacing': [2, 'always'],
     'computed-property-spacing': [2, 'never'],
     'comma-dangle': [2, 'always-multiline'],
+    'comma-spacing': [2, { 'before': false, 'after': true }],
     'array-bracket-newline': 0,
     'array-bracket-spacing': [2, 'never'],
+    'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
     'no-multiple-empty-lines': [2, { 'max': 1, 'maxEOF': 0, 'maxBOF': 0 }],
     'keyword-spacing': [2, { 'before': true, 'after': true }],
     'space-infix-ops': 2,
@@ -114,11 +118,32 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/type-annotation-spacing': [1, {
+    '@typescript-eslint/type-annotation-spacing': [2, {
       'before': false, 'after': true,
+      overrides: { arrow: { before: true, after: true } },
     }],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+      },
+    ],
     '@typescript-eslint/indent': [2, 2, {
       'SwitchCase': 1,
     }],
+    '@typescript-eslint/member-delimiter-style': [
+      2,
+      {
+        'multiline': {
+          'delimiter': 'semi',
+          'requireLast': true,
+        },
+        'singleline': {
+          'delimiter': 'semi',
+          'requireLast': true,
+        },
+      },
+    ],
   },
 }

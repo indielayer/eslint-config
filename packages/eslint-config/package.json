@@ -11,6 +11,9 @@
     "styleguide",
     "eslintconfig"
   ],
+  "scripts": {
+    "lint": "eslint './playground/*.{js,ts}'"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/indielayer/eslint-config.git",
@@ -25,15 +28,15 @@
     "index.js"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
-    "typescript": "^4.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.6.0"
+    "eslint": "^8.43.0"
   },
   "peerDependencies": {
-    "eslint": "^8.6.0"
+    "eslint": "^8.43.0"
   },
   "publishConfig": {
     "access": "public"
