@@ -1,26 +1,22 @@
 {
-  "name": "@indielayer/eslint-config-vue",
-  "version": "3.1.1",
-  "description": "Indielayer ESLint Config for Vue 3",
+  "name": "@indielayer/stylelint-config",
+  "version": "0.0.0",
+  "description": "Indielayer Stylelint Config",
   "homepage": "https://indielayer.com/",
   "keywords": [
     "indielayer",
-    "eslint",
+    "styleling",
     "vue",
-    "vue3",
-    "nuxt",
-    "nuxt3",
     "styleguide",
     "eslintconfig"
   ],
   "scripts": {
-    "lint": "eslint './playground/*.{js,ts,vue}'",
-    "stylelint": "stylelint './playground/*.vue'"
+    "lint": "stylelint '**/*.{css,postcss,scss,sass,vue}'"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/indielayer/eslint-config.git",
-    "directory": "packages/eslint-config-vue"
+    "directory": "packages/stylelint-config"
   },
   "bugs": {
     "url": "https://github.com/indielayer/eslint-config/issues"
@@ -34,14 +30,14 @@
     "access": "public"
   },
   "dependencies": {
-    "@indielayer/eslint-config": "^3.1.1",
-    "eslint-plugin-vue": "^9.15.1"
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
+    "stylelint-config-standard-scss": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.43.0",
     "stylelint": "^14.16.1"
   },
   "peerDependencies": {
-    "eslint": "^8.43.0"
+    "stylelint": ">=14.0.0"
   }
 }

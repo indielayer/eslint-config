@@ -1,0 +1,9 @@
+$primary: red;
+
+#super-normal-id {
+  background-color: $primary;
+
+  .normal-class {
+    color: white;
+  }
+}

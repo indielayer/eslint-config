@@ -1,18 +1,18 @@
-<a href="https://indielayer.com/">
-  <img src="https://user-images.githubusercontent.com/3942799/147986660-cc494b39-559e-4534-be43-0438d0b11090.png" alt="Indielayer" width="300" />
-</a>
+![IndielayerUI-Logo-Dark](.github/logo_dark.svg#gh-dark-mode-only)
+![IndielayerUI-Logo-Light](.github/logo.svg#gh-light-mode-only)
 
 > < Tools for creators. />
 
-<br/>
-
 # Indielayer ESLint Config
 
-[![GitHub Actions](https://github.com/indielayer/eslint-config/workflows/ci/badge.svg?branch=master)](https://github.com/indielayer/eslint-config/actions?query=workflow%3Aci)
-[![npm (scoped with tag)](https://flat.badgen.net/npm/v/@indielayer/eslint-config)](https://npmjs.com/package/@indielayer/eslint-config)
-[![npm](https://flat.badgen.net/npm/dt/@indielayer/eslint-config)](https://npmjs.com/package/@indielayer/eslint-config)
+<p>
+  <a href="https://github.com/indielayer/eslint-config/actions/workflows/release_production.yml"><img src="https://github.com/indielayer/eslint-config/actions/workflows/release_production.yml/badge.svg?branch=main&event=push" alt="ci"></a>
+  <a href="https://www.npmjs.com/package/@indielayer/eslint-config"><img src="https://badgen.net/npm/dm/@indielayer/eslint-config" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/@indielayer/eslint-config"><img src="https://badgen.net/npm/v/@indielayer/eslint-config/latest" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@indielayer/eslint-config"><img src="https://badgen.net/npm/license/@indielayer/eslint-config" alt="License"></a>
+</p>
 
-ESlint config used on Indielayer
+ESlint config by Indielayer
 
 ## Getting Started
 
@@ -62,6 +62,28 @@ And in your `.eslintrc` all you need is :
   "extends": [
     "@indielayer/eslint-config-vue"
   ]
+}
+```
+
+
+## Stylelint
+
+1. Add this package to your devDependencies
+
+```bash
+$ npm i -D stylelint @indielayer/stylelint-config
+# or
+$ yarn add -D stylelint @indielayer/stylelint-config
+```
+
+2. Create a `.stylelintrc.js` file
+
+3. Extend our config:
+
+```js
+module.exports = {
+  root: true,
+  extends: ['@indielayer/stylelint-config'],
 }
 ```
 
