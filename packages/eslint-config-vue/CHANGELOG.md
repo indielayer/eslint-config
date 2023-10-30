@@ -1,5 +1,11 @@
 # @indielayer/eslint-config-vue
 
+## 3.3.0
+
+### Minor Changes
+
+- [`9507304`](https://github.com/indielayer/eslint-config/commit/9507304b85373a7b764a42612657731fe043832b) Thanks [@jpntex](https://github.com/jpntex)! - Add vue/component-name-in-template-casing kebab
+
 ## 3.2.0
 
 ### Minor Changes
