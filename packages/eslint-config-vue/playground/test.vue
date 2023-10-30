@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-
+import CoolBeans from './cool.vue'
 const name = ref<string>('')
 
 name.value = 'John'
@@ -16,6 +16,7 @@ const clickFn = () => {
 <template>
   <input v-model="name" type="text"/>
   <div>multi root</div>
+  <cool-beans/>
   <div
     :class="$style.multi"
     title="clicky"

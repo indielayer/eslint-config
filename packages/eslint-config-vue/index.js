@@ -36,5 +36,13 @@ module.exports = {
         'max': 1,
       },
     }],
+    'vue/component-name-in-template-casing': [
+      'error',
+      'kebab-case',
+      {
+        registeredComponentsOnly: false,
+        ignores: [],
+      },
+    ],
   },
 }
