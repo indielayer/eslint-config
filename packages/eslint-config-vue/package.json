@@ -1,6 +1,6 @@
 {
   "name": "@indielayer/eslint-config-vue",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Indielayer ESLint Config for Vue 3",
   "homepage": "https://indielayer.com/",
   "keywords": [
